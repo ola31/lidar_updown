@@ -17,6 +17,9 @@
 #define TORQUE_ENABLE                   1
 #define TORQUE_DISABLE                  0
 
+#define DOWN_POSI 2075
+#define UP_POSI 3230
+
 
 #define PI 3.1415
 #define ABS(X) ((X) < 0 ? -(X) : (X))
@@ -106,10 +109,10 @@ int main(int argc, char **argv)
 
      if(t < acc_time_area){
        if(goal_updown == 1){
-         goal_posi = 3235;
+         goal_posi = DOWN_POSI;
        }
        else if(goal_updown == 0){
-         goal_posi = 2090;
+         goal_posi = UP_POSI;
 
        }
        if(ABS(t-acc_time_area)<EPSILON){

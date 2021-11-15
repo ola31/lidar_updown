@@ -1,0 +1,4 @@
+<launch>
+  <node name="lidar_updown" pkg="lidar_updown" type="lidar_updown_node" output="screen" />
+</launch>
+
